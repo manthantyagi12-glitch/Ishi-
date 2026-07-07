@@ -19,10 +19,6 @@ setTimeout(typeWriter,45);
 
 typeWriter();
 
-document.getElementById("openBtn").addEventListener("click",()=>{
-
-alert(
-"Welcome ❤️\n\nPart 2 will open your Comfort Box 🌸"
-);
-
+document.getElementById("openBtn").addEventListener("click", function () {
+    window.location.href = "pages/comfort.html";
 });
