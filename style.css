@@ -225,3 +225,26 @@ height:auto;
 }
 
 }
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight:700;
+    color:#ff4d7d;
+}
+
+h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:36px;
+    color:#ff4d7d;
+}
+
+p{
+    font-family:'Inter',sans-serif;
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
