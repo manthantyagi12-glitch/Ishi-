@@ -306,7 +306,7 @@ height:100px;
 }
 
 .envelope.open .letter{
-    transform: translateX(-50%) translateY(-140px);
+    transform: translateX(-50%) translateY(-260px);
 }
 /* ===========================
    LETTER CONTENT
@@ -318,7 +318,7 @@ height:100px;
 
 .letter-content{
 
-    padding:25px;
+    padding:45px 25px 25px;
 
     height:100%;
 
