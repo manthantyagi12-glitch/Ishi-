@@ -1,250 +1,213 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
 
-height:100vh;
-overflow:hidden;
+    font-family:'Inter',sans-serif;
 
-font-family:Poppins,sans-serif;
+    background:#FAF8F4;
 
-background:linear-gradient(
-135deg,
-#ffd6e8,
-#ffeef6,
-#fff7fb
-);
+    color:#3B3B3B;
 
-display:flex;
-justify-content:center;
-align-items:center;
-position:relative;
+    min-height:100vh;
 
-}
+    display:flex;
 
-.container{
+    justify-content:center;
 
-text-align:center;
-z-index:5;
+    align-items:center;
+
+    overflow:hidden;
 
 }
 
-.title{
+.hero{
 
-font-size:58px;
-font-family:'Dancing Script',cursive;
-color:#ff4f81;
+    width:100%;
 
-margin-bottom:25px;
+    max-width:900px;
 
-animation:fadeDown 1.5s ease;
+    padding:40px;
+
+    text-align:center;
 
 }
 
-#typing{
+.hero h1{
 
-font-size:22px;
+    font-family:'Cormorant Garamond',serif;
 
-color:#555;
+    font-size:72px;
 
-min-height:40px;
+    font-weight:700;
 
-margin-bottom:50px;
+    color:#3D5A3A;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    font-size:20px;
+
+    color:#666;
+
+    margin-bottom:60px;
+
+    line-height:1.8;
 
 }
 
 .envelope{
 
-width:320px;
-height:220px;
+    width:340px;
 
-margin:auto;
+    height:230px;
 
-background:white;
+    margin:auto;
 
-border-radius:20px;
+    position:relative;
 
-box-shadow:
-0 25px 60px rgba(0,0,0,.15);
+    cursor:pointer;
 
-padding:30px;
-
-animation:float 4s infinite;
-
-transition:.5s;
+    transition:.35s ease;
 
 }
 
 .envelope:hover{
 
-transform:scale(1.05);
+    transform:translateY(-8px) scale(1.02);
 
 }
 
-.letter h2{
+.body{
 
-color:#ff4f81;
+    position:absolute;
 
-margin-bottom:15px;
+    bottom:0;
 
-}
+    width:100%;
 
-.letter p{
+    height:170px;
 
-line-height:1.8;
+    background:white;
 
-color:#666;
+    border-radius:0 0 14px 14px;
 
-}
-
-button{
-
-margin-top:45px;
-
-padding:18px 35px;
-
-font-size:18px;
-
-border:none;
-
-border-radius:50px;
-
-cursor:pointer;
-
-background:#ff4f81;
-
-color:white;
-
-transition:.4s;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
 
 }
 
-button:hover{
+.flap{
 
-background:#ff2e69;
+    position:absolute;
 
-transform:translateY(-5px);
+    top:0;
 
-box-shadow:0 10px 30px rgba(255,79,129,.4);
+    width:100%;
 
-}
+    height:120px;
 
-.hearts span{
+    background:#5F8D4E;
 
-position:absolute;
+    clip-path:polygon(0 0,100% 0,50% 100%);
 
-bottom:-50px;
-
-font-size:22px;
-
-animation:rise 12s linear infinite;
-
-opacity:.6;
+    z-index:2;
 
 }
 
-.hearts span:nth-child(1){left:5%;animation-delay:0s;}
-.hearts span:nth-child(2){left:20%;animation-delay:2s;}
-.hearts span:nth-child(3){left:35%;animation-delay:4s;}
-.hearts span:nth-child(4){left:50%;animation-delay:1s;}
-.hearts span:nth-child(5){left:65%;animation-delay:6s;}
-.hearts span:nth-child(6){left:80%;animation-delay:8s;}
-.hearts span:nth-child(7){left:90%;animation-delay:3s;}
-.hearts span:nth-child(8){left:97%;animation-delay:5s;}
+.clickText{
 
-@keyframes rise{
+    position:absolute;
 
-0%{
-transform:translateY(0) scale(.7);
-opacity:0;
-}
+    width:100%;
 
-30%{
-opacity:.6;
-}
+    bottom:-55px;
 
-100%{
+    left:0;
 
-transform:translateY(-120vh) scale(1.3);
-opacity:0;
+    font-size:18px;
 
-}
+    color:#3D5A3A;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
 
 }
 
 @keyframes float{
 
-0%{
-transform:translateY(0);
-}
+    0%{
 
-50%{
-transform:translateY(-12px);
-}
+        transform:translateY(0px);
 
-100%{
-transform:translateY(0);
-}
+    }
 
-}
+    50%{
 
-@keyframes fadeDown{
+        transform:translateY(-8px);
 
-from{
+    }
 
-opacity:0;
-transform:translateY(-40px);
+    100%{
 
-}
+        transform:translateY(0px);
 
-to{
-
-opacity:1;
-transform:translateY(0);
-
-}
-
-}
-
-@media(max-width:768px){
-
-.title{
-
-font-size:42px;
+    }
 
 }
 
 .envelope{
 
-width:90%;
-height:auto;
+    animation:float 3.5s ease-in-out infinite;
 
 }
 
-}
-body{
-    font-family: 'Inter', sans-serif;
+@media(max-width:768px){
+
+.hero{
+
+padding:25px;
+
 }
 
-h1{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 64px;
-    font-weight:700;
-    color:#ff4d7d;
+.hero h1{
+
+font-size:52px;
+
 }
 
-h2{
-    font-family:'Cormorant Garamond', serif;
-    font-size:36px;
-    color:#ff4d7d;
+.subtitle{
+
+font-size:18px;
+
+margin-bottom:45px;
+
 }
 
-p{
-    font-family:'Inter',sans-serif;
-    font-size:18px;
-    line-height:1.9;
-    color:#555;
+.envelope{
+
+width:280px;
+
+height:200px;
+
+}
+
+.body{
+
+height:145px;
+
+}
+
+.flap{
+
+height:100px;
+
+}
+
 }
