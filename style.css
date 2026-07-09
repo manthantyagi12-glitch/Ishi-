@@ -308,3 +308,66 @@ height:100px;
 .envelope.open .letter{
     transform: translateX(-50%) translateY(-140px);
 }
+/* ===========================
+   LETTER CONTENT
+=========================== */
+
+.letter{
+    overflow: hidden;
+}
+
+.letter-content{
+
+    padding:25px;
+
+    height:100%;
+
+    overflow-y:auto;
+
+    scrollbar-width:none;
+
+}
+
+.letter-content::-webkit-scrollbar{
+    display:none;
+}
+
+.letter-content h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:36px;
+
+    color:#3D5A3A;
+
+    margin-bottom:20px;
+
+}
+
+.letter-content p{
+
+    font-family:'Inter', sans-serif;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:18px;
+
+}
+
+.ending{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    font-weight:600;
+
+    color:#3D5A3A;
+
+    font-size:18px;
+
+}
