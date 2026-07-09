@@ -190,6 +190,8 @@ body{
 
     top:0;
 
+    left:0;
+
     width:100%;
 
     height:120px;
@@ -198,7 +200,11 @@ body{
 
     clip-path:polygon(0 0,100% 0,50% 100%);
 
-    z-index:2;
+    transform-origin:top;
+
+    z-index:5;
+
+    transition:.8s ease;
 
 }
 
