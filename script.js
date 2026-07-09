@@ -1,24 +1,7 @@
-const message =
-"I made this little website just to remind you how loved you are ❤️";
+const envelope = document.getElementById("envelope");
 
-let i = 0;
+envelope.addEventListener("click", () => {
 
-function typeWriter(){
+    envelope.classList.toggle("open");
 
-if(i < message.length){
-
-document.getElementById("typing").innerHTML += message.charAt(i);
-
-i++;
-
-setTimeout(typeWriter,45);
-
-}
-
-}
-
-typeWriter();
-
-document.getElementById("openBtn").addEventListener("click", function () {
-    window.location.href = "pages/comfort.html";
 });
