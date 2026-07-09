@@ -166,21 +166,23 @@ body{
 
     left:50%;
 
-    bottom:35px;
+    bottom:15px;
 
-    transform:translateX(-50%);
+    transform:translateX(-50%) translateY(0);
 
     width:88%;
 
-    height:145px;
+    height:150px;
 
     background:white;
 
-    border-radius:6px;
+    border-radius:8px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
 
     z-index:2;
 
-    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:all .9s ease;
 
 }
 
@@ -204,7 +206,7 @@ body{
 
     z-index:5;
 
-    transition:.8s ease;
+    transition:transform .8s ease;
 
 }
 
